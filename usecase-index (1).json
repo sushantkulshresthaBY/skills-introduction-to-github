@@ -2,7 +2,7 @@
   "usecases": [
     {
       "usecaseid": 1,
-      "usecase_name": "stat-forecast-upper",
+      "usecase_name": "statistical-forecast-upper",
       "description": "Statistical Forecast — upper hierarchy level",
       "keywords": [
         "forecasting",
