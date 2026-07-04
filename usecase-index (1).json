@@ -1,0 +1,163 @@
+{
+  "usecases": [
+    {
+      "usecaseid": 1,
+      "usecase_name": "stat-forecast-upper",
+      "description": "Statistical Forecast — upper hierarchy level",
+      "keywords": [
+        "forecasting",
+        "predictions",
+        "demand",
+        "upper level",
+        "higher level",
+        "shipment based forecasting",
+        "shipment data stream",
+        "statistical forecast",
+        "stat forecast",
+        "upper hierarchy forecast",
+        "higher hierarchy forecast"
+      ],
+      "sample_query": [
+        "Generate a statistical forecast using shipment data stream at the Brand-Country-Customer level",
+        "Generate configurations for higher level forecasting at Product Line - Region - Channel - Fiscal Month level",
+        "Set up MDE configuration for higher level forecast at Brand-Country-Customer-Week",
+        "Configure higher level forecasting pipeline at Product Line - Region - Channel level",
+        "Create configuration for upper hierarchy statistical forecast at Brand-Country-Customer-FiscalMonth",
+        "Configuration of a forecast at Product Family - Region - Customer - Fiscal Week level",
+        "Statistical forecast at Brand - Country - Customer - Fiscal Month",
+        "Higher level forecast configuration at Product Line - Region - Channel - Fiscal Week",
+        "Forecast at Product Family - Region - Customer - Day",
+        "Forecasting at Brand - Country - Customer - Week",
+        "Upper hierarchy forecast at Product Line - Region - Channel - Fiscal Month",
+        "Generation of forecast at Brand - Country - Customer - Fiscal Week",
+        "Setup of forecasting at Product Family - Region - Customer - Fiscal Month"
+      ],
+      "required_fields": [
+        "item_hierarchy",
+        "location_hierarchy",
+        "customer_hierarchy",
+        "time_granularity"
+      ]
+    },
+    {
+      "usecaseid": 2,
+      "usecase_name": "measure-disagg-both",
+      "description": "Configure Measure disaggregation from higher level to lower level when source_measure & target_measure is known/provided by user",
+      "keywords": [
+        "Forecast disaggregation",
+        "Measure disaggregation",
+        "reconciliation",
+        "upper to lower level",
+        "higher to lower level"
+      ],
+      "sample_query": [
+        "Configure Measure disaggregation where source_measure is A & target_measure is B & assignment_measure is C & allocation_measure is D"
+      ],
+      "required_fields": [
+        "source_measure",
+        "target_measure"
+      ],
+      "optional_fields": [
+        "output_measure",
+        "assignment_measure",
+        "allocate_by_measure"
+      ]
+    },
+    {
+      "usecaseid": 3,
+      "usecase_name": "measure-disagg-source",
+      "description": "Configure Measure disaggregation when only source_measure is provided & target_measure doesn’t exist.",
+      "keywords": [
+        "Forecast disaggregation",
+        "Measure disaggregation",
+        "reconciliation",
+        "upper to lower level",
+        "higher to lower level"
+      ],
+      "sample_query": [
+        "Configure Measure disaggregation from higher level to lower level"
+      ],
+      "required_fields": [
+        "source_measure",
+        "item_hierarchy",
+        "location_hierarchy",
+        "customer_hierarchy",
+        "time_granularity"
+      ]
+    },
+    {
+      "usecaseid": 4,
+      "usecase_name": "sparq-planning",
+      "description": "Configure SPARQ planning service",
+      "keywords": [
+        "Run Supply Plan",
+        "Execute SPARQ",
+        "Generate Master Plan"
+      ],
+      "sample_query": [
+        "Perform forecast netting and Generate a supply plan based on the forecast generated at the lowest level (Item+ Location+Customer) using the SPARQ Solver"
+      ],
+      "required_fields": []
+    },
+    {
+      "usecaseid": 5,
+      "usecase_name": "stat-forecast-retail",
+      "description": "Statistical Forecast for retail— upper hierarchy level",
+      "keywords": [
+        "retail",
+        "retail forecast",
+        "retail statistical forecast",
+        "Inventory transactions based forecasting",
+        "Sales based forecasting",
+        "inventory transactions data stream",
+        "sales data stream",
+        "Style",
+        "StyleColor",
+        "Subclass"
+      ],
+      "sample_query": [
+        "Generate a retail statistical forecast using sales or Inventory transactions data stream at the Style-Channel level",
+        "Generate configurations for higher level retail forecasting at StyleColor - Channel - Fiscal Week level",
+        "Set up MDE configuration for retail higher level forecast at Subclass-Location-Week",
+        "Configure higher level forecasting pipeline at StyleColor - Channel level",
+        "Create configuration for upper hierarchy statistical forecast at StyleColor-Region-FiscalMonth",
+        "Configuration of a forecast at Style - Region - Fiscal Week level",
+        "Statistical forecast at Class - Country - Fiscal Month",
+        "Higher level forecast configuration at Style - Region - Fiscal Week",
+        "Forecast at Class - Region  - Day",
+        "Forecasting at Class - Country - Week",
+        "Upper hierarchy forecast at Style - Region - Fiscal Month",
+        "Generation of forecast at Class - Country - Fiscal Week",
+        "Setup of forecasting at Class - Region -   - Fiscal Month"
+      ],
+      "required_fields": [
+        "item_hierarchy",
+        "location_hierarchy",
+        "time_granularity"
+      ]
+    },
+    {
+      "usecaseid": 6,
+      "usecase_name": "forecast-netting",
+      "description": "Configure Forecast Netting Service",
+      "keywords": [
+        "Forecast Netting",
+        "FNE",
+        "forecast netting service",
+        "netting",
+        "configure netting"
+      ],
+      "sample_query": [
+        "Configure Forecast Netting",
+        "Configure Forecast Netting Service",
+        "Set up FNE service",
+        "Configure FNE"
+      ],
+      "required_fields": [
+        "customer_hierarchy",
+        "gross_measuregroup",
+        "gross_measure"
+      ]
+    }
+  ]
+}
